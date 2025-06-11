@@ -1,16 +1,19 @@
 import React from 'react'
+import img from '../assets/public/images/arrow-down.svg'
 
-const Button = () => {
+const Button = ({text,className,id}) => {
   return (
     
-      <a className='cta-wrapper'>
-        <div className='cta-group group'>
-          <div className='bg-circle'>
-             <p className='text'>See my Work</p>
+      <a className={`${className ?? ''} cta-wrapper group`}>
+        <div className='cta-button group'>
+          <div className='bg-circle'> </div>
+             <p className='text'>{text}</p>
              <div className='arrow-wrapper'>
-              <img src="" alt="" />
+              <img src={img} alt="arrow"
+              
+              />
              </div>
-          </div>
+          
         </div>
       </a>
    

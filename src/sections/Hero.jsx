@@ -2,6 +2,7 @@ import React from 'react'
 import bgImage from '../assets/public/images/bg.png'
 import { words } from '../assets/constants'
 import Button from '../components/Button'
+import HeroExperience from '../components/HeroModels/HeroExperience'
 
 
 
@@ -42,9 +43,20 @@ const Hero = () => {
           <p className='text-white-50 md:text-xl relative z-10 pointer-events-none'>
                 Hi, im Ahmed Thousif , a developer based in India with a passion for code
           </p>
-          <Button />
+          <Button 
+          className="md:w-80 md:h-16 w-60 h-12"
+          id="button"
+          text="See my Work"
+          />
         </div>
       </header>
+
+      {/* Right side 3d model */}
+      <figure>
+        <div className='hero-3d-layout'>
+         <HeroExperience/>
+        </div>
+      </figure>
      </div>
     </section>
   )
