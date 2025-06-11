@@ -1,3 +1,8 @@
+import ideasImg from '../public/images/ideas.svg';
+import conceptsImg from '../public/images/concepts.svg';
+import designsImg from '../public/images/designs.svg';
+import codeImg from '../public/images/code.svg';
+
 const navLinks = [
   {
     name: "Work",
@@ -18,14 +23,14 @@ const navLinks = [
 ];
 
 const words = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
+  { text: "Ideas", imgPath: ideasImg },
+  { text: "Concepts", imgPath: conceptsImg },
+  { text: "Designs", imgPath: designsImg },
+  { text: "Code", imgPath: codeImg },
+  { text: "Ideas", imgPath: ideasImg },
+  { text: "Concepts", imgPath: conceptsImg },
+  { text: "Designs", imgPath: designsImg },
+  { text: "Code", imgPath: codeImg },
 ];
 
 const counterItems = [
