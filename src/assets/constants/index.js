@@ -42,53 +42,53 @@ const counterItems = [
 
 const logoIconsList = [
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    imgPath: "/src/assets/public/images/logos/company-logo-1.png",
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    imgPath: "/src/assets/public/images/logos/company-logo-2.png",
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    imgPath: "/src/assets/public/images/logos/company-logo-3.png",
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    imgPath: "/src/assets/public/images/logos/company-logo-4.png",
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    imgPath: "/src/assets/public/images/logos/company-logo-5.png",
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    imgPath: "/src/assets/public/images/logos/company-logo-6.png",
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    imgPath: "/src/assets/public/images/logos/company-logo-7.png",
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
+    imgPath: "/src/assets/public/images/logos/company-logo-8.png",
   },
   {
-    imgPath: "/images/logos/company-logo-9.png",
+    imgPath: "/src/assets/public/images/logos/company-logo-9.png",
   },
   {
-    imgPath: "/images/logos/company-logo-10.png",
+    imgPath: "/src/assets/public/images/logos/company-logo-10.png",
   },
   {
-    imgPath: "/images/logos/company-logo-11.png",
+    imgPath: "/src/assets/public/images/logos/company-logo-11.png",
   },
 ];
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
+    imgPath: "/src/assets/public/images/seo.png",
     title: "Quality Focus",
     desc: "Delivering high-quality results while maintaining attention to every detail.",
   },
   {
-    imgPath: "/images/chat.png",
+    imgPath: "/src/assets/public/images/chat.png",
     title: "Reliable Communication",
     desc: "Keeping you updated at every step to ensure transparency and clarity.",
   },
   {
-    imgPath: "/images/time.png",
+    imgPath: "/src/assets/public/images/time.png",
     title: "On-Time Delivery",
     desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
   },
