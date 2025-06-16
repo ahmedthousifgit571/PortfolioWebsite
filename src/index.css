@@ -17,6 +17,28 @@ body {
 
 section {
   width: 100dvw;
+  position: relative;
+  z-index: 1;
+}
+
+/* Fix for hero section and counter visibility */
+#hero {
+  position: relative;
+  z-index: 2;
+  isolation: isolate;
+}
+
+#counter {
+  position: relative;
+  z-index: 50;
+  width: 100%;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  background: transparent;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  clear: both;
 }
 
 @theme {
@@ -74,6 +96,9 @@ section {
 
   .grid-4-cols {
     @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .grid-12-cols {
@@ -82,6 +107,8 @@ section {
 
   .hero-layout {
     @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+    /* Ensure hero doesn't interfere with counter */
+    margin-bottom: 2rem;
   }
 
   .hero-text {
@@ -320,6 +347,37 @@ section {
       }
     }
   }
+}
+
+/* Counter specific styles */
+.counter-number {
+  line-height: 1.2;
+  font-weight: 700;
+  display: block;
+}
+
+/* Responsive grid fixes */
+@media (max-width: 768px) {
+  .grid-4-cols {
+    @apply grid-cols-2 gap-4;
+  }
+  
+  #counter {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-4-cols {
+    @apply grid-cols-1 gap-4;
+  }
+}
+
+/* Ensure proper section stacking */
+#hero + * {
+  position: relative;
+  z-index: 3;
 }
 
 /* Hero text slider starts */

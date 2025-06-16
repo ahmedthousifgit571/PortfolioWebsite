@@ -15,7 +15,7 @@ const ShowCaseSection = () => {
     const projectsData = useMemo(() => [
         {
             id: 'spotify',
-            title: 'Spotify Clone with Real-time Chat',
+            title: 'TuneHive a music app with Real-time Chat',
             description: 'A powerful music streaming full-stack application featuring real-time chat functionality using Socket.io, allowing users to share and discuss music instantly.',
             image: spotifyImage,
             techStack: ['React', 'Node.js', 'TypeScript', 'Express', 'MongoDB', 'Tailwind CSS', 'Socket.io', 'JWT', 'Clerk', 'Cloudinary'],
