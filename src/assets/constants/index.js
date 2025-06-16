@@ -97,30 +97,30 @@ const abilities = [
 const techStackImgs = [
   {
     name: "React Developer",
-    imgPath: "/images/logos/react.png",
+    imgPath: "/src/assets/public/images/logos/react.png",
   },
   {
     name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
+    imgPath: "/src/assets/public//images/logos/python.svg",
   },
   {
     name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
+    imgPath: "/src/assets/public//images/logos/node.png",
   },
   {
     name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
+    imgPath: "/src/assets/public//images/logos/three.png",
   },
   {
     name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
+    imgPath: "/src/assets/public//images/logos/git.svg",
   },
 ];
 
 const techStackIcons = [
   {
     name: "React Developer",
-    modelPath: "/models/react_logo-transformed.glb",
+    modelPath: "/src/assets/public/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
@@ -152,39 +152,46 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review: "Thousif consistently delivered high-quality, scalable backend services and reusable frontend components, playing a key role in the success of multiple product releases. His versatility across the stack greatly enhanced our development workflows.",
     imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    logoPath: "/src/assets/public/images/logo1.png",
+    title: "Frontend & Backend Developer",
+    date: "March 2023 - Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+    "Built and maintained scalable backend services using Node.js, Express, TypeScript, and MongoDB.",
+    "Designed and integrated RESTful APIs for seamless communication between services and clients.",
+    "Collaborated within a product development team to deliver robust, production-ready features.",
+    "Developed reusable, accessible, and responsive UI components using React, TypeScript, Tailwind CSS, and Shadcn UI.",
+    "Worked closely with product managers and designers to align technical implementation with business goals.",
+    "Optimized application performance and maintained code quality through Git-based workflows and code reviews.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review: "Thousif made a significant impact during his internship by developing robust backend services and contributing key features to our meeting scheduling platform. His reliability and technical skills added real value to our product team.",
     imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    logoPath: "/src/assets/public/images/logo2.png",
+    title: "Backend Developer Intern",
+    date: "July 2024 - March 2025",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Developed RESTful APIs using Node.js, Express, and TypeScript for a meeting scheduling product.",
+    "Designed and managed MongoDB schemas and queries for efficient data handling.",
+    "Built core features such as meeting creation, meeting type management, app integrations, and notifications.",
+    "Collaborated with the product team to translate business requirements into scalable backend solutions.",
+    "Implemented API validations, error handling, and optimized database operations for performance.",
+    "Contributed to improving code quality and maintainability through code reviews and version control workflows.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review: "Thousif successfully completed his Bachelor's in Computer Science Engineering, demonstrating strong academic performance and a solid understanding of core computer science principles. His dedication and grasp of foundational concepts positioned him well for a career in software development.",
     imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    logoPath: "/src/assets/public/images/logo3.png",
+    title: "B.Tech — Computer Science Engineering",
+    date: "2019 - 2023",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Graduated with a CGPA of 7.8 from Crescent University, Chennai.",
+    "Studied key computer science subjects including Object-Oriented Programming, Data Structures & Algorithms, Digital Systems, Software Engineering, and more.",
+    "Engaged in academic projects and coursework that laid a strong foundation for backend and frontend development roles.",
+    "Developed an interest in full-stack product development through academic learning and self-initiated projects.",
     ],
   },
 ];
