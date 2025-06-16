@@ -16,10 +16,6 @@ const navLinks = [
     name: "Skills",
     link: "#skills",
   },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
-  },
 ];
 
 const words = [
@@ -238,20 +234,14 @@ const testimonials = [
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
     name: "x",
-    imgPath: "/images/x.png",
+    imgPath: "/src/assets/public/images/x.png",
+    url: "https://x.com/ahmedthousif571"
   },
   {
     name: "linkedin",
-    imgPath: "/images/linkedin.png",
+    imgPath: "/src/assets/public/images/linkedin.png",
+    url: "https://www.linkedin.com/in/ahmed-thousif/"
   },
 ];
 
