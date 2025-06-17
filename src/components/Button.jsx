@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../assets/public/images/arrow-down.svg'
+import img from '/images/arrow-down.svg'
 
 const Button = ({text,className,id}) => {
   return (

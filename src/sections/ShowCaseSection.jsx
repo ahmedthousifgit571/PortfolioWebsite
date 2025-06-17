@@ -1,8 +1,8 @@
 import React, { useRef, useMemo } from 'react'
-import spotifyImage from "../assets/public/images/mobileSpotify.png"
-import shoesImage from "../assets/public/images/shoes.png"
-import netflixImage from "../assets/public/images/netflix.png"
-import chatImage from "../assets/public/images/chatify.png"
+import spotifyImage from "/images/mobileSpotify.png"
+import shoesImage from "/images/shoes.png"
+import netflixImage from "/images/netflix.png"
+import chatImage from "/images/chatify.png"
 
 const ShowCaseSection = () => {
     const sectionRef = useRef(null)

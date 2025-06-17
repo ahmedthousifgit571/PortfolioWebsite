@@ -1,4 +1,4 @@
-import bgImage from '../assets/public/images/bg.png'
+import bgImage from '/images/bg.png'
 import { words } from '../assets/constants'
 import Button from '../components/Button'
 import HeroExperience from '../components/HeroModels/HeroExperience'
@@ -32,8 +32,10 @@ const Hero = () => {
               <span className='slide'>
                 <span className='wrapper'>
                   {
-                    words.map((word)=>
-                    <span id={word.text} 
+                    words.map((word,index)=>
+                    <span
+                    key={index} 
+                    id={word.text} 
                     className='flex items-center md:gap-3 pb-2'
                     >
                      <img src={word.imgPath} alt={word.text} 

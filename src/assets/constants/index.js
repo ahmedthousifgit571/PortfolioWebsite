@@ -1,7 +1,7 @@
-import ideasImg from '../public/images/ideas.svg';
-import conceptsImg from '../public/images/concepts.svg';
-import designsImg from '../public/images/designs.svg';
-import codeImg from '../public/images/code.svg';
+import ideasImg from '/images/ideas.svg';
+import conceptsImg from '/images/concepts.svg';
+import designsImg from '/images/designs.svg';
+import codeImg from '/images/code.svg';
 
 const navLinks = [
   {
@@ -38,53 +38,53 @@ const counterItems = [
 
 const logoIconsList = [
   {
-    imgPath: "/src/assets/public/images/logos/company-logo-1.png",
+    imgPath: "/images/logos/company-logo-1.png",
   },
   {
-    imgPath: "/src/assets/public/images/logos/company-logo-2.png",
+    imgPath: "/logos/company-logo-2.png",
   },
   {
-    imgPath: "/src/assets/public/images/logos/company-logo-3.png",
+    imgPath: "/images/logos/company-logo-3.png",
   },
   {
-    imgPath: "/src/assets/public/images/logos/company-logo-4.png",
+    imgPath: "/images/logos/company-logo-4.png",
   },
   {
-    imgPath: "/src/assets/public/images/logos/company-logo-5.png",
+    imgPath: "/images/logos/company-logo-5.png",
   },
   {
-    imgPath: "/src/assets/public/images/logos/company-logo-6.png",
+    imgPath: "/images/logos/company-logo-6.png",
   },
   {
-    imgPath: "/src/assets/public/images/logos/company-logo-7.png",
+    imgPath: "/images/logos/company-logo-7.png",
   },
   {
-    imgPath: "/src/assets/public/images/logos/company-logo-8.png",
+    imgPath: "/images/logos/company-logo-8.png",
   },
   {
-    imgPath: "/src/assets/public/images/logos/company-logo-9.png",
+    imgPath: "/images/logos/company-logo-9.png",
   },
   {
-    imgPath: "/src/assets/public/images/logos/company-logo-10.png",
+    imgPath: "/images/logos/company-logo-10.png",
   },
   {
-    imgPath: "/src/assets/public/images/logos/company-logo-11.png",
+    imgPath: "/images/logos/company-logo-11.png",
   },
 ];
 
 const abilities = [
   {
-    imgPath: "/src/assets/public/images/seo.png",
+    imgPath: "/images/seo.png",
     title: "Quality Focus",
     desc: "Delivering high-quality results while maintaining attention to every detail.",
   },
   {
-    imgPath: "/src/assets/public/images/chat.png",
+    imgPath: "/images/chat.png",
     title: "Reliable Communication",
     desc: "Keeping you updated at every step to ensure transparency and clarity.",
   },
   {
-    imgPath: "/src/assets/public/images/time.png",
+    imgPath: "/images/time.png",
     title: "On-Time Delivery",
     desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
   },
@@ -93,34 +93,34 @@ const abilities = [
 const techStackImgs = [
   {
     name: "React Developer",
-    imgPath: "/src/assets/public/images/logos/react.png",
+    imgPath: "/images/logos/react.png",
   },
   {
     name: "Backend Developer",
-    imgPath: "/src/assets/public//images/logos/node.png",
+    imgPath: "/images/logos/node.png",
   },
   {
     name: "Interactive Developer",
-    imgPath: "/src/assets/public//images/logos/three.png",
+    imgPath: "/images/logos/three.png",
   },
 ];
 
 const techStackIcons = [
   {
     name: "React Developer",
-    modelPath: "/src/assets/public/models/react_logo-transformed.glb",
+    modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
     name: "Backend Developer",
-    modelPath: "/src/assets/public/models/node-transformed.glb",
+    modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
     name: "Interactive Developer",
-    modelPath: "/src/assets/public/models/three.js-transformed.glb",
+    modelPath: "/models/three.js-transformed.glb",
     scale: 0.05,
     rotation: [0, 0, 0],
   },
@@ -130,7 +130,7 @@ const expCards = [
   {
     review: "Thousif consistently delivered high-quality, scalable backend services and reusable frontend components, playing a key role in the success of multiple product releases. His versatility across the stack greatly enhanced our development workflows.",
     imgPath: "/images/exp1.png",
-    logoPath: "/src/assets/public/images/logo1.png",
+    logoPath: "/images/logo1.png",
     title: "Frontend & Backend Developer",
     date: "March 2023 - Present",
     responsibilities: [
@@ -145,7 +145,7 @@ const expCards = [
   {
     review: "Thousif made a significant impact during his internship by developing robust backend services and contributing key features to our meeting scheduling platform. His reliability and technical skills added real value to our product team.",
     imgPath: "/images/exp2.png",
-    logoPath: "/src/assets/public/images/logo2.png",
+    logoPath: "/images/logo2.png",
     title: "Backend Developer Intern",
     date: "July 2024 - March 2025",
     responsibilities: [
@@ -160,7 +160,7 @@ const expCards = [
   {
     review: "Thousif successfully completed his Bachelor's in Computer Science Engineering, demonstrating strong academic performance and a solid understanding of core computer science principles. His dedication and grasp of foundational concepts positioned him well for a career in software development.",
     imgPath: "/images/exp3.png",
-    logoPath: "/src/assets/public/images/logo3.png",
+    logoPath: "/images/logo3.png",
     title: "B.Tech — Computer Science Engineering",
     date: "2019 - 2023",
     responsibilities: [
@@ -235,12 +235,12 @@ const testimonials = [
 const socialImgs = [
   {
     name: "x",
-    imgPath: "/src/assets/public/images/x.png",
+    imgPath: "/images/x.png",
     url: "https://x.com/ahmedthousif571"
   },
   {
     name: "linkedin",
-    imgPath: "/src/assets/public/images/linkedin.png",
+    imgPath: "/images/linkedin.png",
     url: "https://www.linkedin.com/in/ahmed-thousif/"
   },
 ];
