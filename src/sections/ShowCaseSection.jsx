@@ -44,7 +44,7 @@ const ShowCaseSection = () => {
             description: 'Streaming platform replica featuring intelligent movie suggestions powered by Gemini API, providing personalized content discovery and enhanced user experience.',
             image: netflixImage,
             techStack: ['React', 'Firebase', 'Tailwind CSS', 'Gemini API', 'Redux'],
-            liveLink: 'https://github.com/ahmedthousifgit571/NetflixAi',
+            liveLink: 'https://netflix-ai-aizj.vercel.app',
             githubLink: 'https://github.com/ahmedthousifgit571/NetflixAi',
             gradientFrom: 'from-red-900/20',
             gradientTo: 'to-pink-900/20',
