@@ -19,7 +19,7 @@ const ShowCaseSection = () => {
             description: 'A powerful music streaming full-stack application featuring real-time chat functionality using Socket.io, allowing users to share and discuss music instantly.',
             image: spotifyImage,
             techStack: ['React', 'Node.js', 'TypeScript', 'Express', 'MongoDB', 'Tailwind CSS', 'Socket.io', 'JWT', 'Clerk', 'Cloudinary'],
-            liveLink: 'https://github.com/ahmedthousifgit571/tuneHive',
+            liveLink: 'https://tune-hive-ns4f.vercel.app/',
             githubLink: 'https://github.com/ahmedthousifgit571/tuneHive',
             featured: true,
             gradientFrom: 'from-blue-900/20',
@@ -44,7 +44,7 @@ const ShowCaseSection = () => {
             description: 'Streaming platform replica featuring intelligent movie suggestions powered by Gemini API, providing personalized content discovery and enhanced user experience.',
             image: netflixImage,
             techStack: ['React', 'Firebase', 'Tailwind CSS', 'Gemini API', 'Redux'],
-            liveLink: 'https://netflix-ai-aizj.vercel.app',
+            liveLink: 'https://netflix-ai-a1l9.vercel.app/',
             githubLink: 'https://github.com/ahmedthousifgit571/NetflixAi',
             gradientFrom: 'from-red-900/20',
             gradientTo: 'to-pink-900/20',
@@ -56,7 +56,7 @@ const ShowCaseSection = () => {
             description: 'A feature-rich chat application built using the Stream platform, allowing users to chat in multiple languages, video call their friends, record their screens, and customize the application theme for a personalized experience.',
             image: chatImage, 
             techStack: ['React', 'TypeScript', 'Node', 'Express', 'MongoDB', 'Tailwind CSS', 'Shadcn UI', 'Zustand', 'TanStack Query', 'JWT', 'Clerk'],
-            liveLink: 'https://streamify-8s6e.onrender.com',
+            liveLink: 'https://streamify-p7e2.vercel.app/',
             githubLink: 'https://github.com/ahmedthousifgit571/streamify',
             gradientFrom: 'from-purple-900/20',
             gradientTo: 'to-indigo-900/20',
@@ -217,7 +217,7 @@ const ShowCaseSection = () => {
                 {/* Other Projects Grid */}
                 <div className='grid md:grid-cols-2 gap-8'>
                     <ProjectCard 
-                        project={projectsData[1]} 
+                        project={projectsData[3]} 
                         projectRef={project2Ref} 
                     />
                     <ProjectCard 
@@ -225,7 +225,7 @@ const ShowCaseSection = () => {
                         projectRef={project3Ref} 
                     />
                     <ProjectCard 
-                        project={projectsData[3]} 
+                        project={projectsData[1]} 
                         projectRef={project4Ref} 
                     />
                 </div>
