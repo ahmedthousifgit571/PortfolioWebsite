@@ -1,11 +1,36 @@
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { useEffect, useRef } from "react";
 
 import {Computer} from "./Computer-optimized";
 
 const ContactExperience = () => {
+  const canvasRef = useRef(null);
+
+  useEffect(() => {
+    const handleWheel = (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+    };
+
+    const canvasElement = canvasRef.current;
+    if (canvasElement) {
+      canvasElement.addEventListener('wheel', handleWheel, { passive: false });
+    }
+
+    return () => {
+      if (canvasElement) {
+        canvasElement.removeEventListener('wheel', handleWheel);
+      }
+    };
+  }, []);
+
   return (
-    <Canvas shadows camera={{ position: [0, 3, 7], fov: 45 }}>
+    <div ref={canvasRef} style={{ width: '100%', height: '100%' }}>
+      <Canvas 
+        shadows 
+        camera={{ position: [0, 3, 7], fov: 45 }}
+      >
       <ambientLight intensity={0.5} color="#fff4e6" />
 
       <directionalLight position={[5, 5, 3]} intensity={2.5} color="#ffd9b3" />
@@ -19,6 +44,8 @@ const ContactExperience = () => {
 
       <OrbitControls
         enableZoom={false}
+        enablePan={false}
+        zoomSpeed={0}
         minPolarAngle={Math.PI / 5}
         maxPolarAngle={Math.PI / 2}
       />
@@ -38,6 +65,7 @@ const ContactExperience = () => {
         <Computer />
       </group>
     </Canvas>
+    </div>
   );
 };
 
