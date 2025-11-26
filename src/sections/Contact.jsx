@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import TitleHeader from "../components/TitleHeader";
-import ContactExperience from "../components/models/contact/ContactExperience";
+import { SplineSceneBasic } from "../components/ui/demo";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -140,15 +140,8 @@ const Contact = () => {
 
             {/* Right Side - 3D Experience */}
             <div className="flex-1 lg:flex-2">
-              <div 
-                className="bg-gradient-to-br from-[#cd7c2e] to-[#a46b2d] w-full h-96 lg:h-full min-h-[400px] lg:min-h-[600px] hover:cursor-grab rounded-3xl overflow-hidden shadow-2xl transition-transform hover:scale-[1.02] duration-300"
-                onWheel={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                }}
-                style={{ touchAction: 'none' }}
-              >
-                <ContactExperience />
+              <div className="w-full h-96 lg:h-full min-h-[400px] lg:min-h-[600px]">
+                <SplineSceneBasic />
               </div>
             </div>
           </div>

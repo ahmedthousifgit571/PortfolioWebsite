@@ -131,7 +131,7 @@ const expCards = [
     review: "Thousif consistently delivered high-quality, scalable backend services and reusable frontend components, playing a key role in the success of multiple product releases. His versatility across the stack greatly enhanced our development workflows.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Frontend & Backend Developer",
+    title: "Full Stack Developer",
     date: "March 2023 - Present",
     responsibilities: [
     "Built and maintained scalable backend services using Node.js, Express, TypeScript, and MongoDB.",
