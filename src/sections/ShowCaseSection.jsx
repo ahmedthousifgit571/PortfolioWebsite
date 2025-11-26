@@ -3,6 +3,7 @@ import spotifyImage from "/images/mobileSpotify.png"
 import shoesImage from "/images/shoes.png"
 import netflixImage from "/images/netflix.png"
 import chatImage from "/images/chatify.png"
+import pdfGeneratorImage from "/images/pdf-generator.png"
 
 const ShowCaseSection = () => {
     const sectionRef = useRef(null)
@@ -10,6 +11,7 @@ const ShowCaseSection = () => {
     const project2Ref = useRef(null)
     const project3Ref = useRef(null)
     const project4Ref = useRef(null)
+    const project5Ref = useRef(null)
 
     // Memoize project data to prevent unnecessary re-renders
     const projectsData = useMemo(() => [
@@ -25,6 +27,17 @@ const ShowCaseSection = () => {
             gradientFrom: 'from-blue-900/20',
             gradientTo: 'to-purple-900/20',
             buttonColor: 'bg-white text-black hover:bg-gray-200'
+        },
+        {
+            id: 'pdf-generator',
+            title: 'YatraSutra Invoice Generator',
+            description: 'A comprehensive invoice generation system built with Appwrite backend, enabling seamless creation, management, and tracking of invoices with secure authentication and real-time data processing.',
+            image: pdfGeneratorImage,
+            techStack: ['React', 'Appwrite', 'Tailwind CSS', 'PDF Generation'],
+            liveLink: 'https://yatrasutrainvoicegen.appwrite.network/login',
+            gradientFrom: 'from-teal-900/20',
+            gradientTo: 'to-cyan-900/20',
+            buttonColor: 'bg-teal-500 hover:bg-teal-600'
         },
         {
             id: 'shoes',
@@ -112,13 +125,15 @@ const ShowCaseSection = () => {
                                     >
                                         View Live
                                     </button>
-                                    <button 
-                                        onClick={() => handleGithubLink(project.githubLink)}
-                                        className='border border-gray-600 text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition-all duration-200 transform hover:scale-105'
-                                        aria-label={`View source code for ${project.title}`}
-                                    >
-                                        Source Code
-                                    </button>
+                                    {project.githubLink && (
+                                        <button 
+                                            onClick={() => handleGithubLink(project.githubLink)}
+                                            className='border border-gray-600 text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition-all duration-200 transform hover:scale-105'
+                                            aria-label={`View source code for ${project.title}`}
+                                        >
+                                            Source Code
+                                        </button>
+                                    )}
                                 </div>
                             </div>
                             <div className='order-1 lg:order-2'>
@@ -172,18 +187,20 @@ const ShowCaseSection = () => {
                     <div className='flex gap-3'>
                         <button 
                             onClick={() => handleLiveLink(project.liveLink)}
-                            className={`flex-1 ${project.buttonColor} text-white py-2 px-4 rounded-lg font-medium transition-all duration-200 transform hover:scale-105`}
+                            className={`${project.githubLink ? 'flex-1' : 'w-full'} ${project.buttonColor} text-white py-2 px-4 rounded-lg font-medium transition-all duration-200 transform hover:scale-105`}
                             aria-label={`View live ${project.title}`}
                         >
                             View Project
                         </button>
-                        <button 
-                            onClick={() => handleGithubLink(project.githubLink)}
-                            className='flex-1 border border-gray-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-gray-800 transition-all duration-200 transform hover:scale-105'
-                            aria-label={`View source code for ${project.title}`}
-                        >
-                            Code
-                        </button>
+                        {project.githubLink && (
+                            <button 
+                                onClick={() => handleGithubLink(project.githubLink)}
+                                className='flex-1 border border-gray-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-gray-800 transition-all duration-200 transform hover:scale-105'
+                                aria-label={`View source code for ${project.title}`}
+                            >
+                                Code
+                            </button>
+                        )}
                     </div>
                 </div>
             </div>
@@ -217,16 +234,20 @@ const ShowCaseSection = () => {
                 {/* Other Projects Grid */}
                 <div className='grid md:grid-cols-2 gap-8'>
                     <ProjectCard 
-                        project={projectsData[3]} 
+                        project={projectsData[4]} 
                         projectRef={project2Ref} 
                     />
                     <ProjectCard 
-                        project={projectsData[2]} 
+                        project={projectsData[3]} 
                         projectRef={project3Ref} 
                     />
                     <ProjectCard 
                         project={projectsData[1]} 
                         projectRef={project4Ref} 
+                    />
+                    <ProjectCard 
+                        project={projectsData[2]} 
+                        projectRef={project5Ref} 
                     />
                 </div>
             </div>
