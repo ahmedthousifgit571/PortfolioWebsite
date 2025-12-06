@@ -4,6 +4,7 @@ import shoesImage from "/images/shoes.png"
 import netflixImage from "/images/netflix.png"
 import chatImage from "/images/chatify.png"
 import pdfGeneratorImage from "/images/pdf-generator.png"
+import landingImage from "../assets/landingLogo.png"
 
 const ShowCaseSection = () => {
     const sectionRef = useRef(null)
@@ -12,6 +13,7 @@ const ShowCaseSection = () => {
     const project3Ref = useRef(null)
     const project4Ref = useRef(null)
     const project5Ref = useRef(null)
+    const project6Ref = useRef(null)
 
     // Memoize project data to prevent unnecessary re-renders
     const projectsData = useMemo(() => [
@@ -50,6 +52,18 @@ const ShowCaseSection = () => {
             gradientFrom: 'from-orange-900/20',
             gradientTo: 'to-red-900/20',
             buttonColor: 'bg-orange-500 hover:bg-orange-600'
+        },
+        {
+            id: 'landing',
+            title: 'Premium Travel Landing Page',
+            description: 'A modern, production-ready travel landing page showcasing advanced frontend skills with smooth animations, interactive components, and a premium design system using React and TailwindCSS.',
+            image: landingImage,
+            techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Shadcn UI', 'Framer Motion', 'React Three Fiber'],
+            liveLink: 'https://vita-travels.vercel.app/',
+            githubLink: 'https://github.com/ahmedthousifgit571/vita-travels',
+            gradientFrom: 'from-emerald-900/20',
+            gradientTo: 'to-teal-900/20',
+            buttonColor: 'bg-emerald-500 hover:bg-emerald-600'
         },
         {
             id: 'netflix',
@@ -224,7 +238,7 @@ const ShowCaseSection = () => {
                     </p>
                 </div>
 
-                {/* Featured Project */}
+                {/* Featured Project - TuneHive */}
                 <ProjectCard 
                     project={projectsData[0]} 
                     projectRef={project1Ref} 
@@ -234,20 +248,24 @@ const ShowCaseSection = () => {
                 {/* Other Projects Grid */}
                 <div className='grid md:grid-cols-2 gap-8'>
                     <ProjectCard 
-                        project={projectsData[4]} 
+                        project={projectsData[1]} 
                         projectRef={project2Ref} 
                     />
                     <ProjectCard 
-                        project={projectsData[3]} 
+                        project={projectsData[2]} 
                         projectRef={project3Ref} 
                     />
                     <ProjectCard 
-                        project={projectsData[1]} 
+                        project={projectsData[3]} 
                         projectRef={project4Ref} 
                     />
                     <ProjectCard 
-                        project={projectsData[2]} 
+                        project={projectsData[5]} 
                         projectRef={project5Ref} 
+                    />
+                    <ProjectCard 
+                        project={projectsData[4]} 
+                        projectRef={project6Ref} 
                     />
                 </div>
             </div>
